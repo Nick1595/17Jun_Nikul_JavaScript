@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>AREA OF TRIANGLE</title>
+</head>
+<body>
+  <h1>AREA OF TRIANGLE</h1>
+  <label for="">Base :</label>
+  <input type="number" id="base" required>
+  <br>
+  <label for="">Height</label>
+  <input type="number" id="height" required> <br>
+  <button onclick="AOT()">"Calculate"</button>
+  <div id="result"></div>
+
+  <script>
+    function AOT()
+    {
+      var base = document.getElementById("base").value;
+
+      var height = document.getElementById("height").value;
+
+      var area = base * height / 2;
+
+      document.getElementById("result").innerHTML = "AREA OF TRIANGLE:" + area;
+     }
+  </script>
+</body>
+</html>

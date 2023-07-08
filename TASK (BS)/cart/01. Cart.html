@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/01. style.css">
+    <title> CART </title>
+</head>
+<body>
+    <section id="cart">
+    <section>  
+        <div>Id</div>
+        <div>Product Name</div>
+        <div>Brand</div>
+        <div>Photo</div>
+        <div>Quantity</div>
+        <div>Price</div>
+        <div> &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Description</div>
+        <div style="padding-left: 65px;"> &nbsp;&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp;&nbsp;Action</div>
+    </section>
+
+    <section id="main">
+        <div>1</div>
+        <div>JORDAN</div>
+        <div>NIKE</div>
+        <div> <img src="/img/shoes.webp""> </div>
+
+        <div onchange="subtotal()"> <input type="number" value="1" name="" id="quentity" min="1" max="5">  </div >
+
+        <div onchange="subtotal()"> <input type="text" name="" id="price" value="  6999 " readonly> </div>
+        
+        <div> designs, markets, and distributes athletic footwear.</div>
+        <div> <a href="#">Delete</a> </div>
+    </section>
+
+    <section id="amount">
+        <div id="st">SUBTOTAL:<span id="bd">6999</span></div>
+        <div id="disc">Price After 10% Discount:<span id="ad">1350</span></div>
+    </section>
+    </section>
+
+
+    <script>
+        function subtotal(){
+            var n = document.getElementById("price").value;
+            var m = document.getElementById("quentity").value;
+            var p = n*m;
+            document.getElementById("bd").innerHTML = +p;
+
+            var P = p-(n*m)*10/100;
+            document.getElementById("ad").innerHTML = +P;
+        }
+    </script>
+</body>
+</html>

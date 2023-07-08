@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Area Of Circle</title>
+    <style>
+      body{
+          color: wheat;
+          background: #000;
+          margin: 50px 50px;
+      }
+    </style>
+    <script>
+        function AOC() 
+        {
+            var r = parseFloat( document.getElementById("number").value);
+
+            var areaofcircle = 3.14*r*r ;
+
+            document.getElementById("result").innerHTML = "Area Of Circle:" + areaofcircle ;
+        }
+    </script>
+</head>
+<body>
+  <center>
+    <h1>Area of Circle</h1>
+    <label for="">Enter a Value:</label>
+    <input type="number" name="" id="number" required>
+    <br> <br>
+   &nbsp;&nbsp; <button onclick="AOC()">Calculate</button>
+    <div id="result"></div>
+  </center>
+</body>
+</html>

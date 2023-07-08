@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Average_Marks </title>
+    <style>
+      
+      div{
+        background: greenyellow;
+          margin-top: 55px;
+
+          padding: 50px 55px;
+      }
+    </style>
+</head>
+<body>
+  <center>
+    <div>
+        <label for="sub1">Enter the Marks of Subject-1 :</label>
+        <input type="text" name="" id="sub1"><br><br>
+        <label for="sub2">Enter the Marks of Subject-2 :</label>
+        <input type="text" name="" id="sub2"><br><br>
+        <label for="sub3">Enter the Marks of Subject-3 :</label>
+        <input type="text" name="" id="sub3"><br><br>
+        <span>Total Marks:</span> <span id="total"></span><br>
+        <span>Average Marks:</span> <span id="average"></span><br><br>
+        <button onclick="average()">Click Here!!</button>
+    </div>
+  </center>
+
+    <script>
+        function average(){
+            var value1 = parseFloat(document.getElementById("sub1").value);
+            var value2 = parseFloat(document.getElementById("sub2").value);
+            var value3 = parseFloat(document.getElementById("sub3").value);
+
+            var Total = value1 + value2 + value3;
+            document.getElementById("total").innerHTML = +Total;
+
+            var Average = Total / 3;
+            document.getElementById("average").innerHTML = +Average;
+        }
+    </script>
+</body>
+</html>
