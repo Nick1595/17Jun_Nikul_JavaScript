@@ -1,0 +1,42 @@
+*{
+  padding: 0;
+  margin: 0;
+}
+body{
+  background: rgb(207, 205, 205);
+}
+
+  @import url('https://fonts.googleapis.com/css2?family=Playfair:wght@300&display=swap');
+
+h2{
+  margin-left: 50px;
+  margin-top: 50px;
+  color : rgb(198, 101, 52);
+  box-shadow: 2px 5px 2px solid black;
+  font-size: 35px;
+  
+}
+h2 span{
+  border-bottom: 3px solid black;
+  
+}
+p{
+  font-family: 'Playfair', serif;
+  font-size: 20px;
+  margin-left: 50px;
+  margin-top: 50px;
+}
+button {
+  margin-left: 60px;
+  margin-top: 50px;
+  border: 2px solid black;
+  border-radius: 5px 5px;
+  width: 5rem;
+  padding: 5px;
+  background: rgb(198, 101, 52);
+}
+
+button a{
+  text-decoration: none;
+  color: black;
+}
