@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>keyboard events</title>
+  
+</head>
+<body>
+  <label for="text">enter value</label>
+  <input type="number" id="nm" placeholder="enter the number" > <br><br>
+
+  <label for="text">enter second value</label>
+  <input type="number" id="nm1" placeholder="enter the number" > <br><br>
+  
+  <input ondblclick="ad()" type="button" id="btn" value="go"> <br><br>
+  <p id="p"></p>
+  
+  <!-- <input ondblclick="sd()" type="button" id="btn2" value="sub"> <br><br>
+  <p id="p1"></p> -->
+
+  <script>
+    function ad(){
+       
+          var a = parseInt(document.getElementById('nm').value);
+
+          var b = parseInt(document.getElementById('nm1').value); 
+
+          var c = a*b;
+          document.getElementById('p').innerHTML = "MuLtiPlication is :" + c;
+          console.log(typeof(c));
+
+    }
+    // function sd(){
+       
+    //       var a = parseInt(document.getElementById('nm').value);
+
+    //       var b = parseInt(document.getElementById('nm1').value); 
+
+    //       var c = a-b;
+    //       document.getElementById('p1').innerHTML = "Sub is :" + c;
+    //       console.log(typeof(c));
+          
+    // }
+  </script>
+</body>
+</html>
+
+
+
+<script>
+</script>
+
+
+

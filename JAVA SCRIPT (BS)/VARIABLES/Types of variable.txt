@@ -1,0 +1,42 @@
+JAVA SCRIPT can define variable in three ways :-
+
+
+1  - var:-
+2  - let:-
+3  - const:-
+
+-------------------------------------
+1. var - using var keyword you can define variable.
+
+    you can Define
+    var  a = 5;
+
+    you can also redefine:-
+     var a = 15;
+
+    you can change value also:-
+      a = 10;
+
+-----------------------------------------
+2. let - BY using let keyword you can define variable
+
+    define
+    let a = 5;
+
+    IN let you can not redefine variable
+    // let a = 5; 
+
+    But you can change the value of variable.
+    a = 25;
+
+---------------------------------------------------
+3.const:- const means constant By using constant keyword you can define variable
+
+    define
+    const a = 5
+
+    but you can not redifine the variable
+    // const a = 50
+
+    And also you can't change the value
+    // a = 10

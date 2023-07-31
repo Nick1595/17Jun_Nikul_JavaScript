@@ -1,0 +1,20 @@
+If you want to create a Website / WebPages, then you have to need...
+    1. HTML [ body (skeleton) ]
+    2. CSS [ Adds beauty ]
+    3. JAVA SCRIPT [ Brain ]
+
+-> Javascript is a scripting language.
+   [Scripting language is light weight programming language]
+
+-> Javascript is 'Plateform Independent.'
+   [Which means it works for all major browsers]
+
+-> Javascript is 'Client side', 'Object Oriented', 'High Level' Scripting Language.
+
+-> Can not runs stand alone.
+   [Javascript work with HTML and CSS]
+
+-> JavaScript follows the syntax and structure of the 'C programming language'.
+   [So, it's a Structured Programming Language]
+
+-> JavaScript is a case-sensitive language.

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> invoice </title>
+    <style>
+        button{
+            background-color: transparent;
+            border: 3px solid black;
+            padding: 5px 7px;
+            font-size: 15px;
+        }
+    </style>
+</head>
+<body>
+    <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Consectetur asperiores explicabo officia, maxime cumque ad maiores, exercitationem quidem provident mollitia quos soluta culpa dolores vero dolor incidunt ut voluptates distinctio.</p> 
+    
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet labore quam vero cum magnam nostrum nam! Voluptates similique quam quas dolore sapiente asperiores, facilis ducimus obcaecati vitae alias. Iste tenetur est, totam dolorem repudiandae earum omnis molestias sit dicta at cumque fuga possimus, dignissimos officiis doloremque maxime recusandae excepturi deserunt atque id reiciendis facilis dolore. Adipisci, recusandae. Fugit consectetur quaerat blanditiis. Adipisci esse quasi facilis saepe sunt consequatur qui dolor rem perferendis non, excepturi voluptates aliquid! Assumenda, fugiat! Recusandae vitae libero repudiandae numquam assumenda, harum labore, quisquam est ab quod ipsam minus. Dignissimos impedit ea cupiditate doloremque recusandae quas reiciendis!</p>
+    <br><br>
+    <button id="btn" onclick="Print()">
+       PRINT
+    </button>
+
+    <script>
+        function Print(){
+            var n = document.getElementById("btn").style.display="none";
+            window.print();
+        }
+    </script>
+</body>
+</html>

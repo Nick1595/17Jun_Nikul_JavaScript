@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Else-If</title>
+</head>
+<body>
+    <img src="https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824_1280.png" alt="">
+    <!-- <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTY3woadQBefDeS_NQxgNb4Vu0hh_2SrP_bqw&usqp=CAU" alt="">
+    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTC2A0j4H7IRjJaVA5SIvb6iXMPS7lRLmhG4A&usqp=CAU" alt=""> -->
+
+    <button>Change Image</button>
+    <script>
+        const img = document.querySelector('img');
+        const btn = document.querySelector('button');
+        btn.addEventListener('click', () => {
+            if (img.src == "https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824_1280.png")
+            {
+                img.src = "https://easydrawingguides.com/wp-content/uploads/2016/12/how-to-draw-a-cute-cartoon-cat-featured-image-1200.png";
+            }
+            else if (img.src == "https://easydrawingguides.com/wp-content/uploads/2016/12/how-to-draw-a-cute-cartoon-cat-featured-image-1200.png"){
+                img.src = "https://i.pinimg.com/736x/99/5f/fe/995ffe375f0c4129e515212b1ffbf756.jpg";
+            }
+            else{
+                img.src = "https://cdn.pixabay.com/photo/2020/05/11/15/38/tom-5158824_1280.png";
+            }
+        })
+        img.style.height = "400px";
+        img.style.width = "500px";
+        <h1>h1</h1>
+
+    </script>
+</body>
+</html>

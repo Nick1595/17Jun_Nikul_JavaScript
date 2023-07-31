@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>sub</title>
+</head>
+<body>
+  <h1>SUBRACTION :-</h1>
+  <label for="val">ENTER THE VALUE</label>
+  <input type="number" id="nm" placeholder="Enter number"> <br><br>
+
+  <label for="val2">ENTER THE VALUE</label>
+  <input type="number" id="nm2" placeholder="Enter number"><br><br>
+
+  <input onclick="sp()" type="button" value="ENTER" id="btm" ><br><br>
+  <p id="p"></p>
+
+  <script>
+    function sp(){
+
+      var a = parseInt(document.getElementById("nm").value);
+      var b = parseInt(document.getElementById("nm2").value);
+
+      var c = a-b;
+
+      document.getElementById('p').innerHTML ="substraction is :" + c;
+    }
+  </script>
+</body>
+</html>
