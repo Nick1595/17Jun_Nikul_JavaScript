@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>QUESTION-2</title>
+  <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+  <style>
+    span{
+      border-bottom: solid;
+      color: rgb(60, 84, 45);
+
+    }
+    body{
+      background: palegreen;
+    }
+  </style>
+    <script>
+      
+      jQuery(document).ready(function(){
+          jQuery("#one").css({"width":"20%","height":"auto","background-color":"white","padding":"10px", "margin-left":"50px"});;
+      });
+
+      jQuery(document).ready(function(){
+          jQuery("#added").addClass("header");
+          jQuery("#added").css({"width":"20%","margin-left":"50px","background-color":"gray","height":"5px", "margin-top":"20px"});
+      });
+
+      $(document).ready(function(){
+        $("#btn").click(function(){
+            $(".removecls").remove();
+        })
+      })
+
+      $(document).ready(function(){
+  $("#clk").click(function(){
+    $("#div1").animate({
+      left: '550px',
+      opacity: '0.5',
+      height: '150px',
+      width: '450px'
+    });
+  });
+});
+
+     
+  </script>
+  <!-- check via css -->
+  <style>
+      .header 
+      {
+          width: 100%;
+          height: 100px;
+          background-color: rgb(153, 250, 153);
+          padding: 25px;
+          margin-left:28px;
+      }
+
+      .removecls{
+        font-size: 20px;
+        color: cadetblue;
+        background-color: black;
+        height: 100px;
+        width: 100px;
+        margin: auto;
+
+      }
+  </style>
+</head>
+<body> <center>
+  <h1><p> QUESTION-2</p> <span>How to Apply CSS Using JQuery, How to Add Class and Remove Class in 
+    Jquery, JQuery Animation?</span>
+    </h1> 
+  </center> 
+  <!-- ADDING CSS THROUGH JQUERY -->
+  <h2 style="margin-left: 58px;"> I. CSS USING jQuery.</h2>
+  <div id="one">CSS ADDED THROUGH jQuery</div>
+
+  <!-- QUESTION{2} ADDING CLASS THROUGH JQUERY -->
+  <h2 style="margin-left: 58px;"> II. ADDING CLASS USING jQuery.</h2>
+  <div id="added">CLASS ADDED</div>
+
+  <!-- QUESTION-{3} REMOVING CLASS THROUGH jQuery -->
+  <h2 style="margin-left: 58px;"> III. REMOVNG CLASS USING jQuery.</h2>
+
+  <div class="removecls">REMOVE</div> <br>
+   <button id="btn" style="margin-left: 700px;"> CLICK TO REMOVE </button>
+
+  <!-- QUESTION-{4} ANIMATION -->
+  <h2 style="margin-left: 58px;"> IV. ADDING ANIMATION USING jQuery.</h2>
+
+
+  <h3 style="margin-left: 50px;">ANIMATION </h3>
+  <div id="div1" style="width: 10%; height: 120px; background: rgb(215, 9, 77); margin-left:50px ;"></div> <br>
+  <button style="margin-left: 50px;" id="clk">Start Animation</button>
+</body>
+</html>

@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Slider </title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="https://malsup.github.io/jquery.cycle.all.js"></script>
+    <script>
+
+        $(document).ready(function(){
+            $("img").css({"height":"500px","width":"500px","margin-left":"500px","margin-top":"130px"});
+            $("#images").cycle("fade");
+            // $("#images").cycle("turnRight");
+            // $("#images").cycle("shuffle");
+            // $("#images").cycle("zoom");
+        });
+    </script>
+</head>
+<body style="background-color: black;">
+  
+   <section id="slider">
+    <div id="images">
+        <img src="/QUESTION-3/IMAGES/pexels-francesco-ungaro-1525041.jpg" alt="">
+        <img src="/QUESTION-3/IMAGES/pexels-mateusz-sałaciak-4275890.jpg" alt="">
+        <img src="/QUESTION-3/IMAGES/pexels-muffin-creatives-2468773.jpg" alt="">
+        <img src="/QUESTION-3/IMAGES/04.jpg" alt="">
+    </div>
+   </section> 
+</body>
+</html>
