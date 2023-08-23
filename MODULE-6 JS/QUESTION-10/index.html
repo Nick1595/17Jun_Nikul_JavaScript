@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+<link rel="stylesheet" href="../QUESTION-1/css/style.css">
+  <script>
+    const fs = require('fs');
+
+// Writing to a file
+const contentToWrite = 'This is the content to write.';
+fs.writeFileSync('output.txt', contentToWrite);
+
+// Reading from a file
+const contentRead = fs.readFileSync('output.txt', 'utf-8');
+console.log(contentRead);
+  </script>
+</head>
+<body>
+
+  <h2>QUESTION-10 <br><span>How to read and write a file using JavaScript? </span></h2>
+  <h3 style="margin: 26px 60px;">TO BROWSE FILE CHOSSE THE GIVEN OPTION BELOW :-</h3 >
+  <input type="file" id="fileInput" style="margin: 30px 60px; border: 3px solid gray   ; border-radius: 5px ; padding: 10px 15px ;">
+  <pre id="fileContent"></pre>
+
+  <script>
+    const fileInput = document.getElementById('fileInput');
+    const fileContentElement = document.getElementById('fileContent');
+
+    fileInput.addEventListener('change', (event) => {
+      const file = event.target.files[0];
+      const reader = new FileReader();
+
+      reader.onload = (event) => {
+        const fileContent = event.target.result;
+        fileContentElement.textContent = fileContent;
+      };
+
+      reader.readAsText(file);
+    });
+  </script>
+
+
+  <button><a href="/QUESTION-8/index.html" >BACK</a></button>
+  <button><a href="/QUESTION-11/index.html" >NEXT</a></button>
+</body>
+</html>

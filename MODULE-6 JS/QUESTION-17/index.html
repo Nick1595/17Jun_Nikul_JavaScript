@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <h2>QUESTION-17 <br><span>What are the disadvantages of using innerHTML in JavaScript?
+  </span>
+  <h1> disadvantages of using innerHTML in JavaScript</h1>
+  <p>Security Risks:
+    Using innerHTML to insert or update content can expose your application to security vulnerabilities, such as cross-site scripting (XSS) attacks. If the content you're inserting contains user-generated or untrusted data, malicious scripts could be injected into your page, leading to potential security breaches.</p> <hr>
+  <p>Performance Impact:
+    When you use innerHTML to update an element's content, the browser essentially removes the existing content, parses the new HTML content, and then renders it. This process can be less efficient compared to more specialized DOM manipulation methods, especially when dealing with large amounts of content or frequent updates.</p><hr>
+  <p>Event Listener Loss:
+    When you overwrite the content of an element using innerHTML, any event listeners attached to elements within that content will be lost. This is because the original elements are removed and replaced with new ones. This can lead to unexpected behavior if you're relying on event listeners for interactivity.</p>
+    <hr>
+  <p>Incorrect HTML Parsing:
+    The browser's HTML parser is responsible for interpreting and rendering HTML content. When you use innerHTML, you're effectively telling the browser to parse HTML code as if it were part of the original document. This can sometimes lead to unexpected results if the HTML you're inserting is not well-formed or clashes with the existing structure.</p>
+ <hr>
+
+  <button><a href="/QUESTION-16/index.html" target="_blank">BACK</a></button>
+
+  <button><a href="/QUESTION-18/index.html" target="_blank">NEXT</a></button> 
+</body>
+</html>

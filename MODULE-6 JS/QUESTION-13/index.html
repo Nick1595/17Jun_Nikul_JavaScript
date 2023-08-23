@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>QUESTION-13</title>
+</head>
+<body>
+
+  <h2>QUESTION-13 <br><span> What is the function of the delete operator? </span></h2>
+<h1 style="margin: 50px 78px;"> 
+  <script>
+    // Example with an object
+    const person = {
+        firstName: "NIKUL",
+        lastName: "PARMAR",
+        age: 19
+    };
+
+    document.write("Before delete: " + JSON.stringify(person) + "<br>");
+
+    delete person.age; // Delete the 'age' property
+
+    document.write("After delete: " + JSON.stringify(person) + "<br><br>");
+
+    // Example with an array
+    const numbers = [1, 2, 3, 4, 5];
+
+    document.write("Before delete: " + numbers.join(", ") + "<br>");
+
+    delete numbers[2]; // Delete the element at index 2
+
+    document.write("After delete: " + numbers.join(", "));
+</script> </h1><br><br>
+
+  <button><a href="/QUESTION-12/index.html" target="_blank">BACK</a></button>
+
+  <button><a href="/QUESTION-14/index.html" target="_blank">NEXT</a></button> 
+</body>
+</html>

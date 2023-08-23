@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/style.css">
+  <title>Document</title>
+</head>
+<body>
+
+  <h2>QUESTION-14 <br><span>What are all the types of Pop up boxes available in JavaScript?</span>
+  </h2>
+
+  <h1>THERE ARE THREE THYES OF POP UP  BOX </h1>
+    <ul>
+      <li>1.ALERT BOX </li>
+      <li>2.CONFORM BOX</li>
+      <li>3.PROMPT BOX</li>
+    </ul>
+
+    <!-- alert -->
+
+    <button class="btn btn1" onclick="showAlert()">Show Alert</button>
+
+        <script>
+            function showAlert() {
+              alert("This is an alert box!");
+              }
+        </script>
+
+        <!-- CONFORM BOX -->
+
+        <button class=" btn btn2" onclick="showConfirm()">Show Confirm</button>
+
+        <script>         
+        function showConfirm() {
+            var result = confirm("Do you want to proceed?");
+                if (result) {
+            alert("You clicked OK!");
+              } else {
+            alert("You clicked Cancel!");
+              }
+            }
+         </script>
+
+         <!-- PROMPT BOX -->
+
+         <button class="btn btn3" onclick="showPrompt()">Show Prompt</button>
+
+         <script>
+         function showPrompt() {
+           var userInput = prompt("Please enter your name:", "NIKUL PARMAR");
+           if (userInput !== null) {
+             alert("Hello, " + userInput + "!");
+          } else {
+             alert("No name entered.");
+           }
+         }
+         </script>
+         <br><br><br><hr><hr>
+
+
+
+
+
+
+
+  <button><a href="/QUESTION-13/index.html" target="_blank">BACK</a></button>
+
+  <button><a href="/QUESTION-15/index.html" target="_blank">NEXT</a></button> 
+</body>
+</html>
